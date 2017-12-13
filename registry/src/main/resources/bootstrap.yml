@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: registry
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+
+---
+spring:
+  profiles: prd
+  cloud:
+    config:
+      uri: http://10.11.4.87:8888
+
+---
+spring:
+  profiles: notebook
+  cloud:
+    config:
+      uri: http://192.168.99.100:8888
