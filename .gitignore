@@ -7,3 +7,9 @@
 *.iml
 out
 gen
+target
+
+# Package Files #
+*.jar
+*.war
+*.ear
