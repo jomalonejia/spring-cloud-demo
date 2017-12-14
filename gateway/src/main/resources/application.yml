@@ -1,5 +1,10 @@
 server:
   port: 8080
+zuul:
+  routes:
+    api-a:
+      path: /service-2/**
+      serviceId: service-1
 
 
 
