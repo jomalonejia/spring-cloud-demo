@@ -22,5 +22,5 @@
 -   docker-compose up -d (run other services)
 -   docker-compose logs (print logs)
 
-## test
-- [localhost:8080/service-1/test](localhost:8080/service-1/test) you would return success response
+# Examples
+> http://localhost:8080/service-1/test
