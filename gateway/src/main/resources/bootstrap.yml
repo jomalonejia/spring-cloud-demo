@@ -1,8 +1,16 @@
+
 spring:
   application:
     name: gateway
   profiles:
     active: dev
+  cloud:
+    config:
+      uri: http://10.11.4.87:8888
+server:
+  port: 8080
+
+
 
 ---
 spring:

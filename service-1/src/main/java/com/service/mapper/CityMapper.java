@@ -1,9 +1,9 @@
-package service1.mapper;
+package com.service.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import service1.domain.City;
+import com.service.domain.City;
 
 /**
  * Created by jomalone_jia on 2017/12/11.

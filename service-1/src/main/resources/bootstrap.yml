@@ -1,8 +1,14 @@
+
 spring:
   application:
     name: service-1
   profiles:
     active: dev
+  cloud:
+    config:
+      uri: http://10.11.4.87:8888
+server:
+  port: 8088
 
 ---
 spring:

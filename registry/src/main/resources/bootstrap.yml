@@ -1,8 +1,20 @@
+
 spring:
   application:
     name: registry
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
+  cloud:
+    config:
+      uri: http://10.11.4.87:8888
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
 
 ---
 spring:

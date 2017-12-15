@@ -16,19 +16,23 @@ services:
     ports:
       - 8761:8761
     environment:
-      - SPRING_PROFILES_ACTIVE=prd
+      - SPRING_PROFILES_ACTIVE=notebook
   gateway:
     build: ./gateway
     ports:
       - 8080:8080
+    links:
+      - registry
+      - service-1
     environment:
-      - SPRING_PROFILES_ACTIVE=prd
+      - SPRING_PROFILES_ACTIVE=notebook
   service-1:
     build: ./service-1
     ports:
       - 8088:8088
     links:
+      - registry
       - mysql
     environment:
-      - SPRING_PROFILES_ACTIVE=prd
+      - SPRING_PROFILES_ACTIVE=notebook
 
